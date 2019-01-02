@@ -1,0 +1,29 @@
+angular start up steps
+
+1. create and go to a project dir for all angular projects
+	Project/angular
+2. check version of node and install or upgrade if it's not 8x or 10x
+	node -v
+	to check all installed node versions
+	nvm ls
+	to change to another node version
+	nvm use node-version-here
+3. install angular cli if it's not already installed
+	npm install -g @angular/cli
+4. create and got a project folder for this new project using node
+	//to get started just go with the default answers for routing and CSS
+	ng new appNameHere 
+	cd appNameHere
+5. build the new app and start the included node server
+	//this starts the server to be able to host your app base page
+	//then opens a browser to localhost:4200
+	//note - if the node server is already running, you may need to kill 
+	//it to run another one on the same port number
+	ng serve --open
+
+	//to kill the process, after exiting with Ctrl+Z
+	pkill -9 ng
+	//but it's better to stop ng server this way
+	Ctrl+C
+
+
